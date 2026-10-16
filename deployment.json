@@ -2,6 +2,16 @@
   "network": "GenLayer Studio Next",
   "chainId": 61997,
   "rpc": "https://studio-next.genlayer.com/api",
-  "contractAddress": "0x4354BBa2361Fa0C8F29f284259e90e41E445290D",
-  "deploymentTransaction": "0xa869f6d923205a74aa3aa714cdba471217d01232403e8139f822cba414ec71d2"
+  "contractAddress": "0x0440dfDb01FA844bF2340Fa46d3fEaF1aCFC3908",
+  "deploymentTransaction": "0x3067360947e4d7bfb265303f4454c15d6a1276ac31fe7eb5c2a5765d4dec420c",
+  "sourceSha256": "b1ad528fb2d4c2ac8fcb9f1d87a07aedb16c9224a02d7793372dd917ef4c2788",
+  "liveDemo": {
+    "routeId": "stepfree-mvb7ubdt",
+    "createTransaction": "0x6e8facb8aba18f7eadcc5085cb20fabfbebaa9d961a8ff31453287909a571872",
+    "freezeTransaction": "0xd4166f1c11e64d87ea01282e84b0b0e473a8b689a7e15780d065295fdfe5e487",
+    "assessTransaction": "0x3eb0f2623ac2d6ee07ddb60e9a3f0377f316b8dfd438dfd778312745f6c190d0",
+    "certifyTransaction": "0xadcaab6998142edf26aa3688df8b5e23b87db0e4ab690a07252d05e0adefe6b7",
+    "finalState": "CERTIFIED",
+    "finalGate": "PASSABLE"
+  }
 }

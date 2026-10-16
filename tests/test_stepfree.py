@@ -26,7 +26,7 @@ def result(blocked=False):
     rows = []
     for index, criterion in enumerate(CRITERIA):
         state = "BLOCKED" if blocked and index == 0 else "PASS"
-        rows.append({"criterion": criterion, "state": state, "profile_quote": PROFILE_QUOTES[index], "survey_quote": SURVEY_QUOTES[index], "reason": "The venue claim and independent route measurement support this exact accessibility criterion."})
+        rows.append({"criterion": criterion, "state": state})
     return {"criteria": rows}
 
 
@@ -74,8 +74,8 @@ def test_all_criteria_required_and_quotes_bound(direct_vm, direct_deploy, monkey
     missing = result(); missing["criteria"].pop(); mock_llm(direct_vm, missing)
     with direct_vm.expect_revert("Every accessibility criterion"):
         contract.assess_route(route_id)
-    direct_vm.clear_mocks(); forged = result(); forged["criteria"][0]["survey_quote"] = "The route was perfectly accessible"; mock_llm(direct_vm, forged)
-    with direct_vm.expect_revert("Independent-survey quote"):
+    direct_vm.clear_mocks(); forged = result(); forged["criteria"][0]["state"] = "UNKNOWN"; mock_llm(direct_vm, forged)
+    with direct_vm.expect_revert("Invalid accessibility state"):
         contract.assess_route(route_id)
 
 

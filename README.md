@@ -33,7 +33,10 @@ npm run build
 - Network: GenLayer Studio Next
 - Chain ID: `61997`
 - RPC: `https://studio-next.genlayer.com/api`
-- Contract address and successful live transaction receipts are recorded in `deployment.json` after deployment.
+- Public app: https://stepfree.pages.dev
+- Contract: `0x0440dfDb01FA844bF2340Fa46d3fEaF1aCFC3908`
+- Verified live route: `stepfree-mvb7ubdt` reached `CERTIFIED / PASSABLE` using a separate assessor account.
+- Source hash and successful live transaction receipts are recorded in `deployment.json`.
 
 Copy `frontend/.env.example` to `frontend/.env`, set `VITE_CONTRACT_ADDRESS`, then run the frontend. The interface is a route atlas: it reads public certificates without a wallet and opens GenLayer's transaction panel for writes.
 
