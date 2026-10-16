@@ -1,0 +1,7 @@
+{
+  "network": "GenLayer Studio Next",
+  "chainId": 61997,
+  "rpc": "https://studio-next.genlayer.com/api",
+  "contractAddress": "0x4354BBa2361Fa0C8F29f284259e90e41E445290D",
+  "deploymentTransaction": "0xa869f6d923205a74aa3aa714cdba471217d01232403e8139f822cba414ec71d2"
+}
